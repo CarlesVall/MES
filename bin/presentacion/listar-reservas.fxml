@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="553.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.ControladorListarReservas">
+   <center>
+      <VBox>
+         <children>
+            <TableView fx:id="reservas" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="idRes" prefWidth="29.0" text="ID" />
+                <TableColumn fx:id="fechaRec" maxWidth="1.7976931348623157E308" prefWidth="127.0" text="Fecha Recogida" />
+                  <TableColumn fx:id="fechaDev" prefWidth="127.0" text="Fecha Devolucion" />
+                  <TableColumn fx:id="modalidadAlquiler" prefWidth="70.0" text="Modalidad" />
+                  <TableColumn fx:id="sucDev" prefWidth="123.0" text="Sucursal Devolucion" />
+                  <TableColumn fx:id="sucRec" minWidth="0.0" prefWidth="116.0" text="Sucursal recogida" />
+                  <TableColumn fx:id="cat" prefWidth="78.0" text="Categoria" />
+                  <TableColumn fx:id="cliente" prefWidth="149.0" text="Cliente" />
+                  <TableColumn fx:id="dni" prefWidth="129.0" text="DNI" />
+              </columns>
+            </TableView>
+            <TableView fx:id="coches" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="matricula" prefWidth="75.0" text="Matricula" />
+                <TableColumn fx:id="km" prefWidth="75.0" text="KMs Actuales" />
+                  <TableColumn fx:id="sucursal" prefWidth="75.0" text="Sucursal" />
+                  <TableColumn fx:id="categoria" prefWidth="75.0" text="Categoria" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Button fx:id="aceptar" mnemonicParsing="false" text="Aceptar" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

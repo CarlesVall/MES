@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="474.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.ControladorListarCategorias">
+   <center>
+      <TableView fx:id="categorias" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="precioModIlimitada" maxWidth="1.7976931348623157E308" prefWidth="116.0" text="PrecioModIlimitada" />
+            <TableColumn fx:id="precioModKms" prefWidth="92.0" text="PrecioModKms" />
+            <TableColumn fx:id="precioSeguroTRiesgo" prefWidth="158.0" text="Precio Seguro Todo Riesgo" />
+            <TableColumn fx:id="precioSeguroTerceros" prefWidth="135.0" text="Precio Seguro Terceros" />
+            <TableColumn fx:id="categoriaSuperior" minWidth="0.0" prefWidth="112.0" text="Categoria Superior" />
+            <TableColumn fx:id="precioKmModKms" prefWidth="126.0" text="PrecioKmModKms" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Button fx:id="aceptar" mnemonicParsing="false" text="Aceptar" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

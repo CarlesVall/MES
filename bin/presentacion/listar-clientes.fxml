@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="484.0" prefWidth="1222.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.ControladorListarClientes">
+   <center>
+      <TableView fx:id="clientes" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="dni" prefWidth="75.0" text="DNI" />
+          <TableColumn fx:id="nombreApellidos" maxWidth="1.7976931348623157E308" prefWidth="136.0" text="Nombre y Apellidos" />
+            <TableColumn fx:id="direccion" prefWidth="147.0" text="Dirección" />
+            <TableColumn fx:id="poblacion" prefWidth="83.0" text="Población" />
+            <TableColumn fx:id="codigoPostal" prefWidth="131.0" text="Código Postal" />
+            <TableColumn fx:id="fechaCarnet" minWidth="0.0" prefWidth="145.0" text="Fecha Carnet Conducir" />
+            <TableColumn fx:id="digitosTC" prefWidth="211.0" text="Nº Tarjeta Credito" />
+            <TableColumn fx:id="caducidadTC" prefWidth="110.0" text="Caducidad Tarjeta" />
+            <TableColumn fx:id="cvcTC" prefWidth="33.0" text="CVC" />
+            <TableColumn fx:id="tipoTC" prefWidth="123.0" text="Tipo Tarjeta" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <Button fx:id="aceptar" mnemonicParsing="false" text="Aceptar" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

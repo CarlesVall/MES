@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefWidth="1270.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.ControladorListarReservasSucursal">
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="sucursales">
+              <columns>
+                <TableColumn fx:id="idSuc" prefWidth="35.0" text="id" />
+                <TableColumn fx:id="direccion" prefWidth="123.0" text="Direccion" />
+              </columns>
+            </TableView>
+            <TableView fx:id="reservas" prefHeight="400.0" prefWidth="1149.0">
+              <columns>
+                <TableColumn fx:id="idRes" prefWidth="47.0" text="id" />
+                <TableColumn fx:id="fechaRec" prefWidth="128.0" text="Fecha Recogida" />
+                  <TableColumn fx:id="fechaDev" prefWidth="143.0" text="Fecha Devolucion" />
+                  <TableColumn fx:id="modalidadAlquiler" minWidth="9.0" prefWidth="156.0" text="Modalidad Alquiler" />
+                  <TableColumn fx:id="sucDev" prefWidth="160.0" text="Sucursal Devolucion" />
+                  <TableColumn fx:id="sucRec" prefWidth="160.0" text="Sucursal recogida" />
+                  <TableColumn fx:id="cat" prefWidth="105.0" text="Categoria" />
+                  <TableColumn fx:id="cliente" prefWidth="101.0" text="Cliente" />
+              </columns>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <Button fx:id="aceptar" mnemonicParsing="false" text="Aceptar" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="10.0" top="5.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>
