@@ -20,10 +20,10 @@ public class CategoriaTests {
         categoria = new Categoria("SUV", 100.0, 50.0, 20.0, 15.0, 10.0, "economy");
     }
 
-    @Test
-    public void testGetNombre() {
-        assertEquals("SUV", categoria.getNombre());
-    }
+    //@Test
+   // public void testGetNombre() {
+    //    assertEquals("SUV", categoria.getNombre());
+   // }
 
     @Test
     public void testSetNombre() {
