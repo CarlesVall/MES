@@ -13,6 +13,7 @@ import java.util.List;
 public class CategoriaTests {
 
     private Categoria categoria;
+    private int numero;
 
     @Before
     public void setUp() {
